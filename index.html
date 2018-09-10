@@ -16,13 +16,13 @@
 
             <p>Digite os número desejados para a operação: </p>
 
-            <label for="label1">1º número:</label>
+            <label for="valor1">1º número:</label>
             <br>
-            <input id="label1" type="text" name="firstnumber">
+            <input id="valor1" type="text" name="valor1">
             <br>
-            <label for="label2">2° número:</label>
+            <label for="valor2">2° número:</label>
             <br>
-            <input id="label2" type="text" name="secondnumber">
+            <input id="valor2" type="text" name="valor2">
             <br>
             
 
@@ -34,15 +34,17 @@
               <option value= "mult">multiplicação(x)</option>
               <option value= "div">divisão(/)</option>
             </select>
+
             <br>
 
-            <button onclick="operacao(document.calcForm.cboOperacoes.value)" value="calcular" >Calc</button>
-            <button onclick="limpar()" value="reset"> Limpar </button>
-            <br>
+            <button type="button" value="calcular" name="calcular" onclick="operacao(document.calcForm.cboOperacoes.value)">Calc</button>
 
-            <label for="label-result">Resultado:</label>
+            <button type="button" value="reset" name="reset" onclick="limpa()">Limpar</button>
+
             <br>
-            <input id="label-result" type="text" name="result">
+            <label for="resultado">Resultado:</label>
+            <br>
+            <input type="text" name="resultado" id="resultado">
             <br>
 
           </fieldset>

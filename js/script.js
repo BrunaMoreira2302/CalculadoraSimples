@@ -1,31 +1,34 @@
 
 function operacao(cboOperacoes){
 
-	var label1 = document.getElementById('label1').value;
-	var label2 = document.getElementById('label2').value;
+	var valor1 = document.getElementById('valor1').value;
+	var valor2 = document.getElementById('valor2').value;
+	var resultado;
 
-	if (label1 == "" || label2 == "") {
+	if (valor1 == "" || valor2 == "") {
 		alert("Digite um valor para a operação!");
 	}else if (cboOperacoes == "soma")  {
-		var resultado = parseInt(label1) + parseInt(label2);
+		 resultado = parseInt(valor1) + parseInt(valor2);
 	}else if (cboOperacoes == "sub") {
-		var resultado = parseInt(label1) - parseInt(label2);
+		 resultado = parseInt(valor1) - parseInt(valor2);
 	}else if (cboOperacoes == "mult") {
-		var resultado = parseInt(label1) * parseInt(label2);
+		 resultado = parseInt(valor1) * parseInt(valor2);
 	}else if (cboOperacoes == "div") {
-		var resultado = parseInt(label1) / (label2);
+		 resultado = parseInt(valor1) / parseInt(valor2);
 	}else{
 		alert("Escolha um valor inválido!")
 	}
-
-	document.getElementById('label-result').value = resultado;
+	
+	document.getElementById('resultado').value = resultado;
 
 }
 
-function limpar(){
-		label1 = "";
-		label2 = "";
-	}
+function limpa(){
+	document.getElementById('valor1').value = "";
+	document.getElementById('valor2').value = "";
+	document.getElementById('resultado').value = "";
+
+}
 
 
 
