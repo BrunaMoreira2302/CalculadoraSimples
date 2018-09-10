@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+  <html>
+    <head>
+      <title>Calculadora</title>
+      <meta charset = "utf-8">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="js/script.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    </head>
+    <body>
+        <form name="calcForm" method="post" action="">
+          
+          <fieldset>
+            <legend>Calculadora Simples</legend>
+
+            <p>Digite os número desejados para a operação: </p>
+
+            <label for="label1">1º número:</label>
+            <br>
+            <input id="label1" type="text" name="firstnumber">
+            <br>
+            <label for="label2">2° número:</label>
+            <br>
+            <input id="label2" type="text" name="secondnumber">
+            <br>
+            
+
+            <label for="cboOperacoes">Selecione uma operação:</label>
+            <br>
+            <select id="cboOperacoes" name="operacoes">
+              <option value= "soma">soma(+)</option>
+              <option value= "sub">subtração(-)</option>
+              <option value= "mult">multiplicação(x)</option>
+              <option value= "div">divisão(/)</option>
+            </select>
+            <br>
+
+            <button onclick="operacao(document.calcForm.cboOperacoes.value)" value="calcular" >Calc</button>
+            <button onclick="limpar()" value="reset"> Limpar </button>
+            <br>
+
+            <label for="label-result">Resultado:</label>
+            <br>
+            <input id="label-result" type="text" name="result">
+            <br>
+
+          </fieldset>
+      </form>
+
+    </body>
+  </html>

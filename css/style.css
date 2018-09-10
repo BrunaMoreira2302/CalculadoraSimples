@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+form{
+	width: 40%;
+	height: 100%;
+	margin: 10% auto;
+	text-align: center;
+}
+
+form p {
+	margin: 2%;
+}
+
+form legend{
+	font-size: 1.5em;
+	margin: 2%;
+}
+
+form fieldset{
+	border: 2px dashed #B22222;
+	padding: 2%;
+}
+
+form label, input, select{
+	margin: 1%;
+	width: 100px;
+	font-size: 1em;
+}
+
+form button{
+	margin: 1%;
+	padding: 1%;
+	width: 70px;
+	height: 30px;
+	border-radius: 10%;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
